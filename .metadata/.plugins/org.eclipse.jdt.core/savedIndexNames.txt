@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Lenovo\Desktop\twitterKlonu\.metadata\.plugins\org.eclipse.jdt.core
+1642175237.index
+2644227606.index
+4065644982.index

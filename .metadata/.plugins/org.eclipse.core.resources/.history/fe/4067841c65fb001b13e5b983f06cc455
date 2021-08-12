@@ -1,0 +1,133 @@
+package twitterKlonu;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import java.awt.Font;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Anasayfa extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField txtNeleerOluyor;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Anasayfa frame = new Anasayfa();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Anasayfa() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 650, 537);
+		contentPane = new JPanel();
+		contentPane.setToolTipText("");
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnNewButton = new JButton("Anasayfa");
+		btnNewButton.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\home.png"));
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnNewButton.setBounds(0, 84, 165, 33);
+		contentPane.add(btnNewButton);
+		
+		JButton btnKefet = new JButton("   Ke\u015Ffet");
+		btnKefet.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\icons8_hashtag_large_32.png"));
+		btnKefet.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnKefet.setBounds(-2, 132, 166, 33);
+		contentPane.add(btnKefet);
+		
+		JButton btnBildirimler = new JButton("Bildirimler");
+		btnBildirimler.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\bell.png"));
+		btnBildirimler.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnBildirimler.setBounds(-5, 177, 170, 33);
+		contentPane.add(btnBildirimler);
+		
+		JButton btnMesajlar = new JButton("Mesajlar");
+		btnMesajlar.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\icons8_secured_letter_32.png"));
+		btnMesajlar.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnMesajlar.setBounds(-4, 225, 173, 33);
+		contentPane.add(btnMesajlar);
+		
+		JButton btnYerIaretleri = new JButton("Yer \u0130\u015Faretleri");
+		btnYerIaretleri.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\icons8_bookmark_32.png"));
+		btnYerIaretleri.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnYerIaretleri.setBounds(-5, 269, 176, 33);
+		contentPane.add(btnYerIaretleri);
+		
+		JButton btnListeler = new JButton("Listeler");
+		btnListeler.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\icons8_playlist_32.png"));
+		btnListeler.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnListeler.setBounds(-8, 311, 177, 33);
+		contentPane.add(btnListeler);
+		
+		JButton btnProfil = new JButton("Profil");
+		btnProfil.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\icons8_user_32.png"));
+		btnProfil.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnProfil.setBounds(-5, 356, 177, 33);
+		contentPane.add(btnProfil);
+		
+		JButton btnDahaFazla = new JButton("Daha Fazla");
+		btnDahaFazla.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\icons8_menu_vertical_32.png"));
+		btnDahaFazla.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnDahaFazla.setBounds(-7, 399, 177, 33);
+		contentPane.add(btnDahaFazla);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\icons8_twitter_64.png"));
+		lblNewLabel.setBounds(11, 30, 76, 42);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Anasayfa");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 20));
+		lblNewLabel_1.setBounds(201, 12, 118, 27);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("");
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\icons8_male_user_64.png"));
+		lblNewLabel_2.setBounds(201, 67, 73, 61);
+		contentPane.add(lblNewLabel_2);
+		
+		txtNeleerOluyor = new JTextField();
+		txtNeleerOluyor.setToolTipText("Neleer Oluyor?");
+		txtNeleerOluyor.setBounds(284, 67, 250, 51);
+		contentPane.add(txtNeleerOluyor);
+		txtNeleerOluyor.setColumns(10);
+		
+		JLabel lblNewLabel_3 = new JLabel("");
+		lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\icons8_gif_32.png"));
+		lblNewLabel_3.setBounds(284, 126, 32, 39);
+		contentPane.add(lblNewLabel_3);
+		
+		JLabel lblNewLabel_4 = new JLabel("");
+		lblNewLabel_4.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\icons8_happy_32.png"));
+		lblNewLabel_4.setBounds(314, 132, 45, 33);
+		contentPane.add(lblNewLabel_4);
+		
+		JLabel lblNewLabel_4_1 = new JLabel("");
+		lblNewLabel_4_1.setIcon(new ImageIcon("C:\\Users\\Lenovo\\Desktop\\twitterKlonu\\twitterKlonu\\img\\icons8_planner_32.png"));
+		lblNewLabel_4_1.setBounds(348, 132, 38, 33);
+		contentPane.add(lblNewLabel_4_1);
+	}
+
+}
